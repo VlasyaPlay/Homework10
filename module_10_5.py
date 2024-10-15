@@ -16,9 +16,8 @@ if __name__ == '__main__':
     names = [f'./file {i}.txt' for i in range(1, 4)]
 
     start = datetime.datetime.now()
-    results = []
     for name in names:
-        results.append(read_info(name))
+        read_info(name)
     end = datetime.datetime.now()
     print(end - start)
 
